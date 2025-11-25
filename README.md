@@ -1,1 +1,1 @@
-Jacob Shron's digital home.
+Jacob Shron's digital home. Currently under construction.
