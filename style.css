@@ -11,7 +11,7 @@ header {
 }
 
 header div {
-    display: infleline-block;
+    display: inline-block;
 }
 
 .JS-container img {
@@ -33,11 +33,10 @@ header div {
     margin: -4.5px;
     font: bold 35px/1.5 "Helvetica Neue", sans-serif;
     text-transform: lowercase;
-
 }
 
-.letter:hover {
-    text-transform: uppercase;  
+.letter:hover { 
+    text-transform: uppercase;
 }
 
 a {
