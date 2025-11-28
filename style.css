@@ -2,6 +2,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+/* NAVBAR */
 header {
     width: 100%;
     display: flex;
@@ -16,15 +17,16 @@ header div {
 
 .JS-container img {
     display: inline-block;
-    width: 100px;
-    padding: 25px;
+    width: 80px;
+    padding: 10px;
 }
 
 .sections .word-container {
     display: inline-block;
     width: 200px;
     text-align: center;
-    font: small-caps bold 30px/1.5 "Helvetice Neue", sans-serif;
+    font: small-caps bold 22px/1.5 "Helvetice Neue", sans-serif;
+    transition: text-shadow .3s ease-out;
 }
 
 .letter {
@@ -33,11 +35,24 @@ header div {
     margin: -4.5px;
     font: bold 35px/1.5 "Helvetica Neue", sans-serif;
     text-transform: lowercase;
+    transition: text-shadow .3s ease-out;
 }
 
-.letter:hover { 
+.letter:hover {
     text-transform: uppercase;
 }
+
+#projects .letter:hover { text-shadow: 0 0 15px rgb(9, 112, 209); }
+#projects.word-container:hover {text-shadow: 0 0 30px rgb(9, 112, 209); }
+
+#aboutMe .letter:hover { text-shadow: 0 0 15px red; }
+#aboutMe.word-container:hover { text-shadow: 0 0 30px red }
+
+#resume .letter:hover { text-shadow: 0 0 15px yellow; }
+#resume.word-container:hover { text-shadow: 0 0 30px yellow; }
+
+#contact .letter:hover { text-shadow: 0 0 15px green; }
+#contact.word-container:hover { text-shadow: 0 0 30px green; }
 
 a {
     all: unset;
