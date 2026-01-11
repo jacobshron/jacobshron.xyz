@@ -13,59 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Stoke:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="JS-container">
-            <img src="assets/J.png">
-            <img src="assets/S.png">
-        </div>
-        <div class="sections">
-            <a href="projects">
-                <div class="word-container" id="projects">
-                    <span class="letter">P</span>
-                    <span class="letter">R</span>
-                    <span class="letter">O</span>
-                    <span class="letter">J</span>
-                    <span class="letter">E</span>
-                    <span class="letter">C</span>
-                    <span class="letter">T</span>
-                    <span class="letter">S</span>
-                </div>
-            </a>
-            <a href="aboutMe">
-                <div class="word-container" id="aboutMe">
-                    <span class="letter">A</span>
-                    <span class="letter">B</span>
-                    <span class="letter">O</span>
-                    <span class="letter">U</span>
-                    <span class="letter">T</span>
-                    <span class="letter">&nbsp;</span>
-                    <span class="letter">M</span>
-                    <span class="letter">E</span>
-                </div>
-            </a>
-            <a href="resume">
-                <div class="word-container" id="resume">
-                    <span class="letter">R</span>
-                    <span class="letter">E</span>
-                    <span class="letter">S</span>
-                    <span class="letter">U</span>
-                    <span class="letter">M</span>
-                    <span class="letter">E</span>
-                </div>
-            </a>
-            <a href="contact">
-                <div class="word-container" id="contact">
-                    <span class="letter">C</span>
-                    <span class="letter">O</span>
-                    <span class="letter">N</span>
-                    <span class="letter">T</span>
-                    <span class="letter">A</span>
-                    <span class="letter">C</span>
-                    <span class="letter">T</span>
-                </div>
-            </a>
-        </div>
-    </header>
+    <div id="navbar"></div>
+
+    <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("navbar").innerHTML = html;
+            });
+    </script>
 
     <img src="assets/IMG_7603.jpeg" width=45%>
     <h4>I'm under construction... your patience would be much appreciated.</h4>
