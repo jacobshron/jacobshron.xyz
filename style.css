@@ -42,10 +42,12 @@ h4 a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
     box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.15);
     margin: 0;
     padding: 0;
+
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .navbar div {
@@ -62,17 +64,23 @@ h4 a {
     display: inline-block;
     width: 200px;
     text-align: center;
-    font: small-caps bold 22px/1.5 "Helvetice Neue", sans-serif;
     transition: text-shadow .3s ease-out;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
 .letter {
     display: inline-block;
     /* width: 40px; */
     margin: -4.5px;
-    font: bold 35px/1.5 "Helvetica Neue", sans-serif;
     text-transform: lowercase;
     transition: text-shadow .3s ease-out;
+
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
 .letter:hover {
