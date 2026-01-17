@@ -1,23 +1,4 @@
-/* FONTS */
-
-.josefin-sans-font {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.stoke-light {
-  font-family: "Stoke", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.stoke-regular {
-  font-family: "Stoke", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('/css/comico.css');
 
 /* ----- */
 
@@ -43,21 +24,36 @@ h4 a {
     justify-content: space-between;
     align-items: center;
     /* border-bottom: 2px solid rgb(0, 0, 0); */
-    box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.15); */
     margin: 0;
     padding: 0;
 
     font-family: "Josefin Sans", sans-serif;
 }
 
-.navbar div {
-    display: inline-block;
+.JS-container {
+    display: flex;
+    align-items: center;
 }
 
 .JS-container img {
-    display: inline-block;
     width: 60px;
-    padding: 10px;
+    padding: 0px;
+    margin: 10px;
+    /* filter: invert(100%); */
+}
+
+.name-letters {
+    font-family: 'Comico-Regular';
+    font-size: 38px;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+}
+
+.name-letters span {
+    margin: -4px;
+    padding: 0;
 }
 
 .sections .word-container {
@@ -106,9 +102,15 @@ a {
 
 body {
     text-align: center;
+    background-color: white;
+    color: black;
 }
 
 img {
     padding: 30px;
     padding-top: 50px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
 }
